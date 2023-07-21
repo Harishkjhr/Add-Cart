@@ -11,3 +11,16 @@ btnCart.addEventListener("click", function () {
 btnClose.addEventListener("click", () => {
   cart.classList.remove("cart-active");
 });
+
+document.addEventListener('DOMContentLoaded',loadFood);
+
+function loadFood(){
+  loadContent();
+
+}
+
+function loadContent(){
+  let btnRemove=document.querySelectorAll('.cart-remove');
+  btnRemove.forEach((btn)=>{
+    btn.addEventListener('click',removeItem);
+  });
