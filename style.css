@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 
 * {
   font-family: "Poppins", sans-serif;
@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: gray;
+  background-color: #4b4b4b;
 }
 
 header {
@@ -17,7 +17,7 @@ header {
   left: 0;
   width: 100%;
   z-index: 99;
-  background-color: #ff4757;
+  background-color: #ed7c08;
 }
 
 .nav {
@@ -35,11 +35,11 @@ header {
   font-weight: 500;
   text-decoration: none;
   text-transform: uppercase;
-  color: #fff;
+  color: #ffffff;
 }
 
 .box {
-  color: #fff;
+  color: white;
   width: 30px;
   height: 30px;
   text-align: center;
@@ -48,19 +48,18 @@ header {
 
 .cart-count {
   position: absolute;
-  background-color: #493939;
-  top: -10px;
+  background-color: #2f3542;
+  top: -5px;
   right: 0;
-  padding: 1px;
+  padding: 3px;
   height: 20px;
-  width: 15px;
+  width: 20px;
   line-height: 20px;
   border-radius: 50%;
   z-index: 99;
 }
 
 #cart-icon {
-  position: absolute;
   font-size: 1.5rem;
   cursor: pointer;
   padding-top: 10px;
@@ -81,7 +80,8 @@ h2.title {
   font-size: 1.1rem;
   font-weight: 500;
   margin-bottom: 1.5rem;
-  color: #fff;
+  color: #ffffff;
+  text-align: center;
 }
 
 .shop-content {
@@ -96,19 +96,20 @@ h2.title {
   position: relative;
   background-color: #fff;
   padding: 10px;
-  box-shadow: 0 1px 4px;
+  box-shadow: 0 1px 4px rgba(40, 37, 37, 0.1);
   border-radius: 3px;
 }
 
 .pic {
   overflow: hidden;
 }
+
 .pic:hover img {
   transform: scale(1.5);
 }
 
 .food-img {
-  transition: 0.3s;
+  transition: 0.5s;
   aspect-ratio: 1/1;
   object-fit: cover;
 }
@@ -116,7 +117,7 @@ h2.title {
 .food-title {
   font-size: 1rem;
   font-weight: 600;
-  color: #ff4757;
+  color: #ed7c08;
 }
 
 .food-price {
@@ -128,15 +129,16 @@ h2.title {
   bottom: 10px;
   right: 10px;
   background-color: #2ed573;
-  color: #fff;
+  color: white;
   padding: 8px;
   font-size: 1.1rem;
   cursor: pointer;
   transition: 0.5s;
+  border-radius: 20px;
 }
 
 .add-cart:hover {
-  background-color: rgba(255, 0, 0, 0.7);
+  background-color: rgba(255, 0, 0, 0.786);
 }
 
 .cart {
@@ -155,7 +157,7 @@ h2.title {
 
 .cart-active {
   right: 0;
-  transform: 0.5s;
+  transition: 0.5s;
 }
 
 .cart-title {
@@ -163,7 +165,7 @@ h2.title {
   font-size: 1.5rem;
   font-weight: 500;
   margin-bottom: 1rem;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -174,7 +176,7 @@ h2.title {
   gap: 1rem;
   margin-top: 1rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .cart-img {
@@ -184,7 +186,6 @@ h2.title {
   border: 2px solid rgba(0, 0, 0, 0.1);
   padding: 5px;
 }
-
 .detail-box {
   display: grid;
   row-gap: 0.5rem;
@@ -225,6 +226,7 @@ h2.title {
   justify-content: flex-end;
   margin-top: 1.5rem;
 }
+
 .total-title {
   font-size: 1rem;
   font-weight: 600;
@@ -236,7 +238,7 @@ h2.title {
 
 .btn-buy {
   padding: 12px 20px;
-  background-color: rgb(46, 45, 45);
+  background-color: #2f3542;
   color: #fff;
   border: none;
   font-size: 1rem;
